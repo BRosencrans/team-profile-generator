@@ -24,16 +24,14 @@ async function newProjectTeam() {
         const newEmployee = await brainQuestions()
         const engineer = new Engineer(newEmployee.daBrain, newEmployee.daBrainId, newEmployee.daBrainMail, newEmployee.daBrainHub)
         projectGroup.push(engineer)
-        
-        
+
     } else if 
     (employeeRole === 'Intern') {
             const newEmployee = await coffeeQuestions()
             const intern = new Intern(newEmployee.thatGuy, newEmployee.thatGuysId, newEmployee.thatGuysEmail, newEmployee.thatGuysCollege)
             projectGroup.push(intern)
            
-    } else  {
-        
+    } else {
         console.log("Have a great day!")
         return
     }
